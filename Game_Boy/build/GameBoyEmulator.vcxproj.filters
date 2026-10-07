@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Shivang\Emulator_Project\Game_Boy\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Shivang\Emulator_Project\Game_Boy\cartridge\cartridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Shivang\Emulator_Project\Game_Boy\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{59A7FFA2-FA0E-3EE3-A21B-AE7D49D5B6AA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

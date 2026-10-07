@@ -1,0 +1,3 @@
+D:/Shivang/Emulator_Project/Game_Boy/build/CMakeFiles/GameBoyEmulator.dir
+D:/Shivang/Emulator_Project/Game_Boy/build/CMakeFiles/ALL_BUILD.dir
+D:/Shivang/Emulator_Project/Game_Boy/build/CMakeFiles/ZERO_CHECK.dir

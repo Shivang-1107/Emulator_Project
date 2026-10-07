@@ -1,0 +1,10 @@
+^D:\SHIVANG\EMULATOR_PROJECT\GAME_BOY\BUILD\CMAKEFILES\109BEDF663131D07908B8FDBC61D8207\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Shivang/Emulator_Project/Game_Boy -BD:/Shivang/Emulator_Project/Game_Boy/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Shivang/Emulator_Project/Game_Boy/build/GameBoyEmulator.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
