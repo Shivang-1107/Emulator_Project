@@ -366,6 +366,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="D:\Shivang\Emulator_Project\Game_Boy\main.cpp" />
     <ClCompile Include="D:\Shivang\Emulator_Project\Game_Boy\cartridge\cartridge.cpp" />
+    <ClCompile Include="D:\Shivang\Emulator_Project\Game_Boy\cpu\cpu.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

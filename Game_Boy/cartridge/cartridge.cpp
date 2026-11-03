@@ -1,6 +1,6 @@
 #include "cartridge.h"
-#include <fstream>
 #include <iostream>
+#include <fstream>
 
 std::vector<uint8_t> loadROM(const std::string& filepath) {
     std::ifstream file(filepath, std::ios::binary);

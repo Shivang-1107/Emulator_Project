@@ -7,6 +7,9 @@
     <ClCompile Include="D:\Shivang\Emulator_Project\Game_Boy\cartridge\cartridge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Shivang\Emulator_Project\Game_Boy\cpu\cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\Shivang\Emulator_Project\Game_Boy\CMakeLists.txt" />

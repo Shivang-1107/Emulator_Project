@@ -4,4 +4,4 @@ project(GameBoyEmulator)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(GameBoyEmulator main.cpp cartridge/cartridge.cpp)
+add_executable(GameBoyEmulator main.cpp cartridge/cartridge.cpp cpu/cpu.cpp)

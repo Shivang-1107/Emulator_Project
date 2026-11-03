@@ -23,5 +23,34 @@ Game Boy ROM file, parses its header, and verifies the header checksum.
 - Visual Studio Community 2026, C++17
 - Windows
 
+## Phase 1 — CPU Core and Instruction Set
+
+Implemented the Game Boy CPU core with registers, flags, instruction decoding,
+and instruction cycle counts.
+
+### What was added
+- All legal base instructions and all 256 CB-prefixed operations
+- Register and memory loads, arithmetic, logic, and comparisons
+- Increments, decrements, rotations, shifts, and bit operations
+- Stack operations, jumps, calls, returns, and restart instructions
+- CPU control instructions: HALT, STOP, DI, EI, and RETI
+- Temporary 64 KB writable memory for instruction execution and stack storage
+
+### Verification completed
+- Successfully built using CMake and Visual Studio 2026
+- Loaded `Pokemon_Red.gb` and matched the expected cartridge information and checksum
+- Executed five instructions with the expected register values, program counter
+  values, and cycle counts: NOP, JP, CP, JR Z, and XOR A
+
+This verifies the initial execution path. The complete instruction set has not
+yet been tested.
+
+### Current limitations
+- Memory is a temporary flat buffer; the Game Boy memory map is not implemented
+- Interrupt servicing is pending
+- STOP wake-up still needs hardware integration
+- Execution currently prints five CPU steps; games are not yet playable
+
 ### Next
-Phase 1 — CPU Core: fetch-decode-execute loop, registers, flags, opcode tables.
+Phase 2 — Memory and Bus/MMU: route CPU memory accesses through the Game Boy
+memory map.

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "cartridge/cartridge.h"
+#include "cpu/cpu.h"
 
 int main() {
     std::cout << "Game Boy emulator starting..." << std::endl;
@@ -33,6 +34,19 @@ int main() {
 
     std::cout << "ROM size: " << getROMSizeKB(header.romSizeCode) << " KB" << std::endl;
     std::cout << "RAM size: " << getRAMSizeKB(header.ramSizeCode) << " KB" << std::endl;
+
+    CPU cpu(romData);
+
+    std::cout << "Starting PC: 0x" << std::hex << cpu.reg.pc << std::dec << std::endl;
+
+    for (int i = 0; i < 5; i++) {
+        int cycles = cpu.step();
+        if (cycles < 0) break;
+            std::cout << "Step " << i + 1 << ": " << cycles << " cycles, PC = 0x"
+            << std::hex << cpu.reg.pc
+            << ", A = 0x" << (int)cpu.reg.a
+            << ", F = 0x" << (int)cpu.reg.f << std::dec << std::endl;
+    }
 
     return 0;
 }
